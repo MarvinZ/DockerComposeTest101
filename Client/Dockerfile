@@ -20,4 +20,3 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Client.dll"]
-RUN dotnet dev-certs https
